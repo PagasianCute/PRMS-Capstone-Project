@@ -1,0 +1,41 @@
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    max-height: 600px;
+  }
+  .image{
+    text-align: center;
+    margin-left: 0;
+    height: 50%;
+  }
+  .image img{
+    max-width: 460px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .form{
+    padding: 50px;
+    height: 100%;
+  }
+  .form .btn{
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+  }  
+  .form h1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }

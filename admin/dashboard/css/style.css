@@ -1,0 +1,1369 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #f2f5f9;
+  transition: height 0.3s ease;
+}
+
+.facility-header {
+  max-width: 300px; /* Adjust the maximum width as needed */
+  overflow: hidden; /* Hide overflow content */
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.facility-header img {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 7px;
+  vertical-align: middle; /* Align the image vertically in the middle of the line */
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+.text {
+  white-space: pre-wrap; /* Allow text to wrap */
+  margin: 0; /* Remove default margin */
+}
+
+.tooltip-custom {
+  background-color: blue !important;
+}
+
+.navbar {
+  padding: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#sidebar.collapse span {
+  font-weight: 500;
+  text-decoration: none;
+  background-color: transparent;
+  padding-left: 10px;
+  display: none;
+}
+
+#sidebar.collapse i {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#sidebar.collapse a {
+  text-decoration: none;
+}
+
+#sidebar.active a {
+  font-weight: 500;
+  text-decoration: none;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+#sidebar.active h3 {
+  margin-bottom: 25px;
+}
+#sidebar.collapse h3 {
+  display: none;
+}
+#sidebar.active .facility-logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  margin: 50px auto;
+}
+
+#sidebar.collapse .facility-logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin: 50px auto;
+}
+
+#sidebar.collapse {
+  /* Collapse */
+  width: 80px;
+  height: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  padding: 15px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+#sidebar.active {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  padding: 15px;
+  background-color: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar .sidebarbtn.active {
+  color: #ffffff;
+  background-color: #209f85;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#sidebar .logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+#sidebar ul li a {
+  padding: 10px;
+  display: block;
+  color: #7f7f7f;
+}
+#sidebar a:hover {
+  color: #209f85;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#sidebar a i {
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-top: -3px;
+  text-decoration: none;
+}
+
+#content {
+  margin-left: 250px; /* Width of the sidebar */
+  transition: margin-left 0.3s;
+  min-height: 100vh;
+  padding: 0 20px 20px 20px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: margin-left 0.3s ease;
+  background-color: #f3f3f8;
+}
+
+.nav-header {
+  margin-left: -900px;
+}
+
+#toggleButton {
+  margin-left: -11px;
+}
+.user-login{
+  margin-top: -10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: -3px;
+
+}
+/* Style for the dropdown container */
+.dropdown {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  cursor: pointer;
+  margin-left: -5px;
+}
+.logo-container {
+  width: 40px; /* Set a specific width for the circular container */
+  height: 40px; /* Set a specific height for the circular container */
+  border-radius: 50%; /* Create a circular shape */
+  overflow: hidden; /* Hide any content outside the circle */
+  margin-right: 10px; /* Center the circle horizontally (optional) */
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+}
+.logo-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the circular container */
+  object-position: center center; /* Center the image within the circle */
+}
+.logo-icon {
+    width: 40px;
+    height: 40px;
+}
+.user-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user-name i.fi-sr-angle-small-down {
+  position: absolute; /* Make the icon absolute */
+  top: 30%; /* Adjust this value to control the icon's vertical position */
+  left: 105%; /* Adjust this value to control the icon's horizontal position */
+}
+
+.user-description {
+  margin-top:0;
+  font-size: 0.8rem;
+}
+.dropdown a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 90%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style for the dropdown content links */
+.dropdown-content a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for dropdown content links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #209f85;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logo-icon {
+  width: 40px; /* Adjust the logo width */
+  height: 40px; /* Adjust the logo height */
+  margin-right: 10px; /* Adjust the spacing between the logo and text */
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.head .btn {
+  align-items: center;
+  padding: 7px 15px;
+}
+
+.head .btn i{
+  padding-left: 3px;
+}
+
+.head_buttons {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.head a{
+  text-decoration: none;
+}
+.feed {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.home-feed {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.wew {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.cards {
+  background-color: #ffffff;
+  padding: 30px;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.main-cards{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.feed .btn i {
+  vertical-align: middle;
+  margin-right: 0;
+  margin-left: -6px;
+  margin-top: 0; /* Optional: Add spacing between the icon and text */
+}
+#sidebar a i {
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-top: -3px; /
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar .btn {
+  background-color: #209f85;
+  color: #fff;
+}
+
+.navbar i {
+  font-size: 20px;
+}
+a.btn.btn-primary {
+  text-decoration: none;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #36363D;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  margin-right: 10px;
+}
+.nav-link {
+  text-decoration: none; /* Remove underlines from links */
+  color: #333; /* Set link text color */
+  font-weight: bold; /* Apply desired font weight */
+}
+
+/* Style for navigation links on hover */
+.nav-link:hover {
+  color: #209f85; /* Change link color on hover */
+}
+
+.input-group-append {
+  cursor: pointer;
+}
+.card {
+  margin-bottom: 20px; /* Adjust the value to increase or decrease the gap between cards */
+}
+
+.modal .modal-content{
+  padding: 8px;
+  border-radius: 16px;
+  border: none;
+}
+
+.modal .button-container {
+  text-align: center; /* Center the text horizontally */
+}
+
+.modal .button-text {
+  margin-top: 20px;
+}
+.button-text a{
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+}
+.modal .modal-body{
+  margin: 0px;
+}
+.modal .body-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#staffModalLogin .modal h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
+.modal h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal .modal-body h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal .body-title h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#loginStaff label {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 2px;
+}
+.modal #loginStaff input {
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#loginStaff .btn {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#staffModalLogin{
+  max-width: 400px;
+}
+
+
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.referral-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.referral-reason {
+  width: 100%;
+  transition: all 0.3s;
+}
+.referral-audit {
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.fclt-signup{
+  background-color: blue;
+}
+.mini-cards{
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 280px;
+  background-color: #FFFF;
+}
+
+.mini-cards-header{
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  margin: 7px auto auto auto;
+}
+.mini-cards-header h6{
+  font-size: 20px;
+  align-items: center;
+  margin: auto 0;
+}
+
+.mini-logo {
+  width: 60px; /* Set a specific width for the circular container */
+  height: 60px; /* Set a specific height for the circular container */
+  border-radius: 15%; /* Create a circular shape */
+  overflow: hidden; /* Hide any content outside the circle */
+  margin: 0 15px; /* Center the circle horizontally (optional) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.mini-logo i{
+  color: #1ba5f5;
+  font-size: 40px;
+  margin: auto;
+}
+.mini-cards img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the circular container */
+  object-position: center center; /* Center the image within the circle */
+}
+
+.mini-card-content {
+  display: flex;
+  margin: 10px 15px 0 30px;
+  gap: 5px;
+}
+
+.mini-cards .mini-name {
+  font-size: 25px;
+  color: #212529;
+}
+
+.mini-cards .mini-description {
+  color: #212529;
+  font-style: italic;
+  font-size: 15px;
+  
+}
+
+.mini-cards .mini-menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.mini-menu-button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: -30px;
+  color: #FFFFFF;
+}
+h1 h2 h3 h4 h5 h6 {
+  color: #36363D;
+}
+.referral-card {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.message-contact:hover{
+  cursor: pointer;
+  background-color: rgb(211, 211, 211, 0.3);
+  transition: all 0.3s;
+}
+
+.mini-referral-logo {
+  min-width: 50px; /* Reduce the width to make the logo smaller */
+  min-height: 50px; /* Reduce the height to make the logo smaller */
+  max-width: 50px; /* Reduce the width to make the logo smaller */
+  max-height: 50px; 
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-left: 0;
+  object-fit: cover;
+  display: flex; /* Center its contents vertically and horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+#referral-logo{
+  background-color: #796EFF;
+}
+#prenatal-logo{
+  background-color: #FF5263;
+}
+#message-logo{
+  background-color: #1ba5f5;
+}
+.referral-card img {
+  width: 25px; /* Adjust the width of the logo within the mini-referral-logo */
+  height: 25px; /* Adjust the height of the logo within the mini-referral-logo */
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.message-contact .name{
+  font-weight: 500;
+}
+.message-description{
+  display: flex;
+  gap: 10px;
+  color: #666666;
+}
+
+.Sent{
+  color: #000;
+  font-weight: 700;
+}
+
+.description {
+  margin-top:0;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.confirm-button {
+  padding: 5px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+#Acceptedbtn{
+  background-color: rgba(32, 159, 133, 0.2);
+  color: #209f85;
+  width: 80px;
+  height: 30px;
+}
+#Declinedbtn{
+  background-color: rgba(255, 82, 99, 0.2);
+  color: #fa4255;
+  width: 80px;
+  height: 30px;
+}
+#Pendingbtn{
+  background-color: rgba(35, 169, 249, 0.2);
+  color: #1ba5f5;
+  width: 80px;
+  height: 30px;
+}
+#viewbtn{
+  background-color: rgba(141, 140, 140, 0.2);
+  color: #5a5a5a;
+  min-width: 70px;
+  min-height: 30px;
+}
+#icon-btn {
+  color: #5a5a5a;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove default padding */
+  background: none; /* Remove any background color or style */
+}
+
+.equal-width-table {
+  table-layout: fixed;
+  width: 100%;
+  padding: 10px;
+}
+
+.equal-width-table th,
+.equal-width-table td {
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.action-column {
+  text-align: center;
+  vertical-align: middle; 
+}
+
+.action-column button {
+  display: block;
+  margin: 0 auto;
+}
+
+.action-column i {
+  margin: 0 auto;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+}
+.action-column i:hover{
+  background-color: rgba(141, 140, 140, 0.1);
+  color: #5a5a5a;
+  transition: all 0.3s;
+}
+#Accepted-column p{
+  background-color: rgba(32, 159, 133, 0.2);
+  color: #209f85;
+  width: 90px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 5px 1px;
+  border-radius: 100px;
+}
+#Declined-column p{
+  background-color: rgba(255, 82, 99, 0.2);
+  color: #fa4255;
+  width: 90px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 5px 1px;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+#Pending-column p{
+  background-color: rgba(35, 169, 249, 0.2);
+  color: #1ba5f5;
+  width: 90px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 5px 1px;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+label{
+  margin-bottom: 10px;
+}
+#carouselbtn{
+  background-color: black;
+  margin-bottom: -200px;
+}
+.datepicker .datepicker-days{
+  padding: 10px;
+}
+.table-condensed{
+  font-size: 0.8rem;
+  height: 200px;
+  width: 340px;
+}
+.new_modal .nav-tabs .nav-link {
+  border: none;
+  margin-bottom: 1px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 10px 0px 10px 0px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.new_modal .nav-tabs .nav-link.active {
+  border-bottom: solid 4px #0d6efd;
+  margin-bottom: -2.5px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.new_modal .nav-tabs {
+  border-bottom: none;
+}
+
+.new_modal .modal-header {
+  border-bottom: none;
+}
+
+.upperBtn {
+  padding: 0px 15px;
+  border: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.new_modal .nav-item {
+  margin-right: 20px;
+}
+
+.modal .btn{
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 4px;
+}
+
+.modal .close{
+  background-color: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 4px;
+}
+
+.modal label{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+.modal-content input{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.modal-content select{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.modal-content select option{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+.modal .modal-header{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+#hahaha{
+  background-color: transparent;
+  padding: 10px 10px 0 20px;
+}
+#hehehe{
+  background-color: transparent;
+}
+.draggable {
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  border: solid #0d6efd 4px;
+  border-style: dashed;
+  height: 100px;
+  padding: 100px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  color: #0d6efd;
+}
+
+#staffEdit .profile-icon {
+  width: 100px; /* Adjust the width to your desired size */
+  height: auto; /* To maintain the aspect ratio */
+}
+
+#staffEdit{
+  max-width: 500px;
+}
+
+#staffEdit .modal-header{
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  margin-bottom: -10px;
+}
+
+#staffEdit .modal-header h1{
+ margin: 0;
+}
+
+#staffEdit .modal-body{
+  display: flex;
+  flex-direction: column;
+}
+#staffEdit .edit-button{
+  margin-top: 20px;
+}
+
+#staffEdit .image-profile {
+  flex: 1; /* Make the image-profile div expand to fill the modal body */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#staffEdit .image-content {
+  width: 120px; /* Set a specific width for the circular container */
+  height: 120px; /* Set a specific height for the circular container */
+  border-radius: 50%; /* Create a circular shape */
+  overflow: hidden; /* Hide any content outside the circle */
+  margin: 0 auto; /* Center the circle horizontally (optional) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#staffEdit .image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the circular container */
+  object-position: center center; /* Center the image within the circle */
+}
+
+
+#addStaff .edit-button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#addStaff .image-profile {
+  flex: 1; /* Make the image-profile div expand to fill the modal body */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#addStaff .image-content {
+  width: 120px; /* Set a specific width for the circular container */
+  height: 120px; /* Set a specific height for the circular container */
+  border-radius: 50%; /* Create a circular shape */
+  overflow: hidden; /* Hide any content outside the circle */
+  margin: 0 auto; /* Center the circle horizontally (optional) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addStaff .image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#staffEdit .profile-icon {
+  max-width: 100%; /* Ensure the image fits within its container */
+  height: auto;
+}
+
+#staffEdit .profile-details{
+  padding: 10px;
+}
+
+#staffEdit .btn-primary {
+  width: 100%; /* Make the submit button fill the width of the form */
+}
+#trimester{
+  border: none;
+  padding: 0;
+  margin: -15px;
+}
+#trimester-header{
+  border-bottom: none;
+}
+#referral_transactions{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+}
+.prenatal_table{
+  min-height: 500px;
+}
+.modal .modal-body {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  max-height: 70vh;
+}
+
+#createReferralModal .modal-dialog{
+  max-width: 80%;
+}
+
+.modal .modal-body::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.modal .modal-body::-webkit-scrollbar-thumb {
+  background: #ECECF1; /* Change the color of the scrollbar thumb */
+  border-radius: 6px; /* Make the scrollbar thumb round */
+}
+
+.modal .modal-body::-webkit-scrollbar-track {
+  background: #FFFFFF; /* Change the color of the scrollbar track */
+}
+.table-header{
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+}
+.table-header .btn{
+  padding: 7px 15px 5px 20px;
+}
+#report{
+  margin-left: auto;
+}
+.notification-content {
+  display: none;
+  position: absolute;
+  top: calc(70% + 10px);
+  right: -200px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 400px;
+  z-index: 1;
+}
+.notifications-container {
+  max-height: 400px; /* Adjust the height accordingly */
+  overflow-y: auto;
+  z-index: 1;
+  cursor: default;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: darkgray lightgray; /* For Firefox */
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
+}
+.notification-header {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-bottom: 2.1px rgb(33, 37, 41, 0.1) solid;
+}
+.notification-content h5 {
+  margin-bottom: 25px;
+}
+.notification-content .footer {
+  padding: 20px;
+}
+.notification-content .footer button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.notification-content .footer i {
+  font-size: 1rem;
+}
+
+.notification {
+  text-decoration: none;
+  color: #36363d;
+  position: relative;
+  display: inline-block;
+}
+.notification-card {
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  height: auto;
+  border-bottom: 2.2px rgb(33, 37, 41, 0.1) solid;
+  color: rgb(33, 37, 41, 0.9);
+  text-decoration: none;
+  width: 500px;
+}
+
+.notification-status {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+.notification-caption p {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.notification-logo img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.notification-card:hover {
+  background-color: rgb(232, 232, 232);
+  color: rgb(33, 37, 41, 0.9);
+}
+.accordion .accordion-item{
+  border: none;
+}
+.accordion .accordion-button:focus {
+  z-index: 3;
+  border-color: blue;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: #000306;
+  background-color: #040d1800;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #dee2e600;
+}
+.acordion-body.btn-sm{
+  outline-color: #000;
+  background-color: #000306;
+}
+.btn-group label {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+.offcanvas .offcanvas-body{
+  padding: 0;
+}
+
+.records_alert h6{
+margin-top: 8px;
+}
+.records_alert .btn{
+  margin-left: auto;
+}
+
+#staffTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#staffTable td {
+  vertical-align: middle;
+  padding: 10px;
+}
+#staffTable th {
+  width: 10%;
+}
+
+#staffTable img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.table .table-btn{
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+}
+.table .table-btn i{
+  margin: auto;
+  font-size: 16px;
+}
+
+#staffTable th{
+  padding: 10px;
+}
+
+#staffTable .btn:hover{
+  background-color: #0B5ED7;
+  color: #ffff;
+}
+
+#staffTable .Doctor{
+  background-color: rgba(35, 169, 249, 0.2);
+  color: #1ba5f5;
+  width: 90px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 22px;
+  margin: auto 0;
+  border-radius: 100px;
+  text-align: center;
+}
+
+#staffTable .Nurse{
+  background-color: rgba(32, 159, 133, 0.2);
+  color: #209f85;
+  width: 90px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: auto 0;
+  padding: 6px 26px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+#staffTable .Midwife{
+  background-color: rgba(138, 32, 159, 0.2);
+  color: #81209f;
+  width: 90px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: auto 0;
+  padding: 6px 19px;
+  border-radius: 100px;
+  text-align: center;
+}
+#staffTable .Admin{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFF;
+  width: 90px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: auto 0;
+  padding: 6px 19px;
+  border-radius: 100px;
+  text-align: center;
+}
+#yourDivId .card img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.newReferrals .card img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.facility-profile{
+  margin-top: 20px;
+}
+
+.facility-profile img {
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.nav-underline .nav-link{
+  color: #000;
+}
+
+/* General styling for referral cards container */
+.referral-cards {
+  padding: 20px 10px;
+}
+
+/* Styling for individual referral card */
+.referral-card {
+  background-color: #FFFFFF;
+  height: 120px;
+}
+
+.card-img {
+  max-width: 130px;
+}
+
+/* Styling for card image inside referral card */
+.card-img img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%; /* Use 50% for a perfect circle */
+  margin-right: auto;
+}
+
+/* Adjust margin for card body inside referral card */
+.referral-card .card-body {
+  margin-left: 0;
+}
+.prenatal-details-btn{
+  border: none;
+  background-color: transparent;
+}
+
+.page-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.page-header h2{
+  margin: auto;
+}
+.report-container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.result-container{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+.report-header{
+  margin-bottom: 10px;
+}
+.report-buttons{
+  margin-left: auto;
+}
+.result-header{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.result-header h4{
+  margin: auto 0;
+}

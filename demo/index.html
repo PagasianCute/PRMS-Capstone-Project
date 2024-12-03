@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calendar with Events</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="calendar-container"></div>
+
+<script>
+    // JavaScript to load the dynamic calendar
+    function loadCalendar() {
+        var container = document.getElementById("calendar-container");
+
+        // Fetch the dynamic calendar using PHP
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                container.innerHTML = xhr.responseText;
+            }
+        };
+
+        xhr.open("GET", "calendar.php", true);
+        xhr.send();
+    }
+
+    // Load the calendar when the page is loaded
+    window.onload = loadCalendar;
+</script>
+
+</body>
+</html>
